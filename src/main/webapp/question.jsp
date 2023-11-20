@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<form action="logic" method="post">
+<form action="${pageContext.request.contextPath}/questions" method="post">
     <fieldset>
         <legend>The Labyrinth of Fate</legend>
 
@@ -29,13 +29,13 @@
             <div class="col-md-4">
                 <div class="radio">
                     <label for="radio-1">
-                        <input type="radio" name="answer" id="radio-1" value="1" checked="checked">
+                        <input type="radio" name="answer" id="radio-1" value="A" checked="checked">
                         A
                     </label>
                 </div>
                 <div class="radio">
                     <label for="radio-2">
-                        <input type="radio" name="answer" id="radio-2" value="2">
+                        <input type="radio" name="answer" id="radio-2" value="B">
                         B
                     </label>
                 </div>

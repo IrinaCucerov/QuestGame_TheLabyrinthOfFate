@@ -23,7 +23,7 @@
 <h3>Can you pass the labyrinth?:</h3>
 <label>Enter your name and click start to try:
 
-<form action="start.jsp" method="post">
+<form action="${pageContext.request.contextPath}/start" method="post">
     <input type="text" name="playerName" required>
     <button type="submit">Start</button>
 </form>
