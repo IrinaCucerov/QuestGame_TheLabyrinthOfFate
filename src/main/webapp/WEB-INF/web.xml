@@ -6,27 +6,24 @@
 
 
     <servlet>
-<servlet-name>GameServlet</servlet-name>
-<servlet-class>com.javarush.icu.labyrinth.GameServlet</servlet-class>
-</servlet>
+        <servlet-name>GameServlet</servlet-name>
+        <servlet-class>com.javarush.icu.labyrinth.GameServlet</servlet-class>
+    </servlet>
     <servlet>
-        <servlet-name>LogicServlet</servlet-name>
-        <servlet-class>com.javarush.icu.labyrinth.LogicServlet</servlet-class>
+        <servlet-name>QuestionsServlet</servlet-name>
+        <servlet-class>com.javarush.icu.labyrinth.QuestionsServlet</servlet-class>
     </servlet>
 
 
-<servlet-mapping>
-<servlet-name>GameServlet</servlet-name>
-<url-pattern>/question</url-pattern>
-</servlet-mapping>
     <servlet-mapping>
-        <servlet-name>LogicServlet</servlet-name>
-        <url-pattern>/logic</url-pattern>
+        <servlet-name>GameServlet</servlet-name>
+        <url-pattern>/start</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionsServlet</servlet-name>
+        <url-pattern>/questions</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>welcome.jsp</welcome-file>
-    </welcome-file-list>
-    <welcome-file-list>
-        <welcome-file>start.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

@@ -14,12 +14,12 @@
 <body>
 <h1>Welcome ${playerName} !</h1>
 
+<h2>10 steps to victory are waiting for you</h2>
+    <h3>Choose one of the answers</h3>
 
-    <h2>Choose one of the answers</h2>
+<form action="/questions" method="post">
 
-<form action="question.jsp" method="post">
-
-    <button type="submit">Start to game</button>
+    <button type="submit">Start to play</button>
 </form>
 
 </body>
